@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> HTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>html</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>This is an example of all HTML, CSS, and JavaScript combined into a single file.</p>
+      <button onclick="showMessage()">Click Me</button>
+      <p id="message" style="color: green; font-weight: bold;"></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 All-in-One Example</p>
+  </footer>
+  <script>
+    function showMessage() {
+      const messageElement = document.getElementById('message');
+      messageElement.textContent = 'Hello! You clicked the button.';
+    }
+  </script>
+</body>
+</html>
